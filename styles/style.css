@@ -24,14 +24,12 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 /* Sets the dimensions for the logo on the top right of the first page. */
 .nav__logo {
-  display: flex;
   height: 80px;
-  width: 72px;
+  width: 57px;
 }
 /* Creates a flex-box for the navigation bar and a top margin of 8px, column-gap of 20px, removes bullet points, and centers the veritcal axis of the navigation bar. */
 .nav__links {
@@ -40,11 +38,10 @@
   column-gap: 20px;
   list-style-type: none;
   padding: 0;
-  align-items: center;
 }
 /* Sets default nav link color to black, and sets bold font.*/
 .nav__link {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
 }
@@ -58,7 +55,7 @@
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
-  margin: 150px 0 0;
+  margin: 128px 0 0;
 }
 /* Sets the header description dimensions, font-size, line-height and margin of the header description on page 1. */
 .header__description {
@@ -196,26 +193,31 @@
 .person_name_feynman {
   top: -30px;
   left: 319px;
+  margin: 0%;
 }
 /* Sets the position of Burbridge on page 2.*/
 .person_name_burbidge {
   top: 96px;
   right: 125px;
+  margin: 0%;
 }
 /* Sets the position of Cannon on page 2.*/
 .person_name_cannon {
   bottom: 18px;
   right: 216px;
+  margin: 0%;
 }
 /* Sets the position of Mitchell on page 2.*/
 .person_name_mitchell {
   bottom: 82px;
   left: 142px;
+  margin: 0%;
 }
 /* Sets the position of Tarter on page 2.*/
 .person_name_tarter {
   top: 79px;
   left: 159px;
+  margin: 0%;
 }
 
 .person__image {
@@ -456,6 +458,7 @@ about page. */
 /* Sets the bottom margin of the footer column heading. */
 .footer__column-heading {
   margin: 0 0 20px;
+  font-size: 16px;
 }
 /* Creates a flex-box for the column link and sets the default color, font-size, and line-height. */
 .footer__column-link {
