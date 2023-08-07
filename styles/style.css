@@ -1,3 +1,4 @@
+/* Sets the webpage's width, height, font size, line-height, margin, and font-family */
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -6,7 +7,7 @@
   line-height: 20px;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
-
+/* Creates a flexbox with a column direction for the header, and sets the height, padding, position, stacking order, and box-sizing of the header element. */
 .header {
   display: flex;
   flex-direction: column;
@@ -16,22 +17,24 @@
   padding: 30px 80px 40px;
   position: relative;
   box-sizing: border-box;
+  z-index: 1;
 }
 
+/* Creates a flex-box for the navigation header, that centers the vertical or cross axis, and spreads the logo and navigation bar on the header.*/
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Sets the dimensions for the logo on the top right of the first page. */
 .nav__logo {
   display: flex;
   height: 80px;
   width: 72px;
 }
-
+/* Creates a flex-box for the navigation bar and a top margin of 8px, column-gap of 20px, removes bullet points, and centers the veritcal axis of the navigation bar. */
 .nav__links {
-  /* Reset default list styles here */
   margin: 8px 0 0;
   display: flex;
   column-gap: 20px;
@@ -39,17 +42,17 @@
   padding: 0;
   align-items: center;
 }
-
+/* Sets default nav link color to black, and sets bold font.*/
 .nav__link {
   color: #000000;
   text-decoration: none;
   font-weight: bold;
 }
-
+/* Change text color to light blue when mouse hover over the navigation links on page 1. */
 .nav__link:hover {
   color: #1f69c9;
 }
-
+/* Sets the header dimension, font-size, line height, boldness and on page 1. */
 .header__title {
   max-width: 601px;
   font-size: 66px;
@@ -57,45 +60,45 @@
   font-weight: 500;
   margin: 150px 0 0;
 }
-
+/* Sets the header description dimensions, font-size, line-height and margin of the header description on page 1. */
 .header__description {
   max-width: 601px;
   font-size: 20px;
   line-height: 30px;
   margin: 32px 0 0;
 }
-
+/* Sets the header image to absolute position, header image width, image location, and stacking order. */
 .header__image {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   max-width: 636px;
   top: 135px;
   right: 20px;
 }
-
+/* Creates a flexbox for the footer, and sets the margin top, width, center vertical or cross axis, and spreads About the Library link from the address.  */
 .header__footer {
   margin-top: auto;
-  width: 100%;
+  width: 100%;.
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
 }
-
+/* Sets default color of About the Library to light blue on page 1. */
 .header__link {
   color: #2f80ed;
   text-decoration: none;
 }
-
+/* Changes default color of text of About the Library to blue when mouse hovers over the link. */
 .header__link:hover {
   color: #1f69c9;
 }
-
+/* Sets default color of address on page 1. */
 .header__address {
   margin: 0;
   color: #838383;
 }
-
+/* Creates a flex-box and padding for events. Sets the background color.*/
 .events {
   padding: 100px 0 120px 80px;
   display: flex;
@@ -108,32 +111,32 @@
 .events__content {
   flex-basis: 580px;
 }
-
+/* Sets font-size, boldness, line-height, and margin of the Upcoming events heading. */
 .events__heading {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   margin: 0;
 }
-
+/* Sets events title font-size, boldness, line-height, and margin. */
 .events__title {
   font-size: 44px;
   font-weight: 500;
   line-height: 52px;
   margin: 32px 0 0;
 }
-
+/* Sets top margin of events info section. */
 .events__info-section {
   margin-top: 32px;
 }
-
+/* Sets flexbox, centers vertical axis, set bottom margin to 4px, and boldness for event info item. */
 .event-info__item {
   display: flex;
   align-items: center;
   margin-bottom: 4px;
   font-weight: 500;
 }
-
+/* Sets position of event info icon, dimensions, and right margin. */
 .event-info__icon {
   background-repeat: no-repeat;
   background-position: center;
@@ -141,31 +144,31 @@
   width: 24px;
   height: 24px;
 }
-
+/* Sets calendar icon on the upcoming events page. */
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
 }
-
+/* Sets the event info icon on the upcoming events page. */
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
 }
-
+/* Sets font size, boldness, line-height and all margins to 0 for the event info text. */
 .event-info__text {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   margin: 0;
 }
-
+/* Sets the top and bottom margin for the events description. */
 .events__description {
   margin: 40px 0 60px;
 }
-
+/* Sets default text color to light blue when mouse hover over the more events link on page 2.*/
 .events__more {
   color: #2f80ed;
   text-decoration: none;
 }
-
+/* Change text color to blue when mouse hover over the more events link on page 2.*/
 .events__more:hover {
   color: #1f69c9;
 }
@@ -181,7 +184,7 @@
 .events__image {
   max-width: 100%;
 }
-
+/* Create a flexbox for the person block, sets it's position to absolute, creates a gap of 10px from title to picture, */
 .person {
   position: absolute;
   display: flex;
@@ -189,27 +192,27 @@
   flex-direction: column;
   gap: 10px;
 }
-
+/* Sets the position of Feynman on page 2.*/
 .person_name_feynman {
   top: -30px;
   left: 319px;
 }
-
+/* Sets the position of Burbridge on page 2.*/
 .person_name_burbidge {
   top: 96px;
   right: 125px;
 }
-
+/* Sets the position of Cannon on page 2.*/
 .person_name_cannon {
   bottom: 18px;
   right: 216px;
 }
-
+/* Sets the position of Mitchell on page 2.*/
 .person_name_mitchell {
   bottom: 82px;
   left: 142px;
 }
-
+/* Sets the position of Tarter on page 2.*/
 .person_name_tarter {
   top: 79px;
   left: 159px;
@@ -218,25 +221,25 @@
 .person__image {
   max-width: 100%;
 }
-
+/* Sets person image to 140px which is large.*/
 .person__image_size_l {
   width: 140px;
 }
-
+/* Sets person image to 100px which is medium.*/
 .person__image_size_m {
   width: 100px;
 }
-
+/* Sets person image to 140px which is small.*/
 .person__image_size_s {
   width: 80px;
 }
-
+/* Sets person caption font size, text alignment, and margin. */
 .person__caption {
   text-align: center;
   font-size: 14px;
   margin: 0;
 }
-
+/* Sets background-image, position, padding, size, and repeat for the staff picks page background. */
 .staff {
   padding: 100px 0 140px;
   background-image: url(../images/staff_picks_background.jpg);
@@ -244,7 +247,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+/* Sets font color, font size, text alignment, line-height, and bottom margin of the title on the staff page. */
 .staff__title {
   text-align: center;
   font-size: 44px;
@@ -252,7 +255,7 @@
   margin: 0 0 24px;
   color: #fff;
 }
-
+/* Sets font color, font size, line-height, boldness, text alignment and margin of the sub-title on the staff page. */
 .staff__subtitle {
   text-align: center;
   font-size: 20px;
@@ -262,7 +265,8 @@
   color: #fff;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+/* Creates a flex-box for staff cards, wraps them, sets width of flex-box, sets margin and padding of flex-box, centers the flex-box on the staff picks page, 
+and provides a gap between cards of 40px. */
 .staff__cards {
   padding: 0;
   margin: 0;
@@ -277,7 +281,7 @@
   margin-right: auto;
   margin-left: auto;
 }
-
+/* Sets height, width, background color, padding, border radius, and box sizing of card. */
 .card {
   background-color: #fff;
   border-radius: 6px;
@@ -286,27 +290,27 @@
   height: 420px;
   width: 360px;
 }
-
+/* Creates a flex-box for card content, and sets flow direction to column. */
 .card__content {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-
+/* Sets font-size, line-height, boldness, and margin of card title. */
 .card__title {
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
   margin: 0;
 }
-
+/* Sets margin, font-size, and line-height of card text. */
 .card__text {
   margin: 20px 0 0;
   font-size: 16px;
   line-height: 24px;
 }
-
+/* Sets font-size, line-height, color, and margin of card footer. */
 .card__footer {
   margin: 0;
   font-size: 14px;
@@ -314,12 +318,12 @@
   color: #838383;
   margin-top: auto;
 }
-
+/* Sets membership page background color and padding. */
 .membership {
   padding: 100px 0 140px;
   background-color: #f2f2f2;
 }
-
+/* Sets membership title's width, margin, font-size, boldness, text alignment, and line-height.  */
 .membership__title {
   max-width: 574px;
   margin: 0 auto;
@@ -328,7 +332,7 @@
   font-weight: 500;
   line-height: 52px;
 }
-
+/* Creates a flexbox for membership steps, sets top margin to 100px, wrap text, centers vertial axis, and provide a 40px gap between cards. */
 .membership__steps {
   list-style-type: none;
   padding: 0;
@@ -338,11 +342,11 @@
   justify-content: center;
   gap: 40px;
 }
-
+/* Sets dimension for flexbox items on the membership page. */
 .step {
   flex-basis: 220px;
 }
-
+/* Creates a flexbox for the step title, sets font-size, line-height, font boldness, title margin, and centers the title's vertical axis. */
 .step__title {
   margin: 0;
   font-size: 20px;
@@ -351,15 +355,16 @@
   display: flex;
   align-items: center;
 }
-
+/* Sets left margin for step icon. */
 .step__icon {
   margin-left: 20px;
 }
-
+/* Sets top margin for step description. */
 .step__description {
   margin: 10px 0 0;
 }
-
+/* Creates a flex-box for about section, sets about page background color to black and, padding of the about section. It also sets the font color to white, position to relative,
+ gap to 120px for about title and content section, and hides overflowing elements on the page. */
 .about {
   padding: 100px 80px;
   background-color: #1f1f1f;
@@ -370,7 +375,7 @@
   gap: 120px;
   display: flex;
 }
-
+/* Creates a flexbox and sets the flex direction to row for the about title. It also sets the font-size, line-height, boldness, stacking order, width, margins, and position. */
 .about__title {
   margin: 0;
   font-size: 20px;
@@ -382,7 +387,8 @@
   position: relative;
   max-width: 154px;
 }
-
+/* Sets the font size, boldness, paragraph width, stacking order, line-height, and position of the paragraph element in the 
+about page. */
 .about__content {
   font-size: 20px;
   line-height: 30px;
@@ -391,7 +397,7 @@
   z-index: 1;
   position: relative;
 }
-
+/* Sets the location, background color, height, width, border-radius, and position of the about circle element. */
 .about__circle {
   background-color: #2f80ed;
   width: 495px;
@@ -401,58 +407,57 @@
   top: -121px;
   left: -91px;
 }
-
+/* Sets the bottom margin of the paragraph elements of the about page. */
 .about__paragraph {
   margin: 0 0 32px;
 }
-
+/* Sets bottom margin to 0 on the last paragraph of the about section. */
 .about__paragraph:last-child {
   margin-bottom: 0;
 }
-
+/* Sets the background color, font-color, padding and box-sizing of the footer. */
 .footer {
   box-sizing: border-box;
   background-color: #1f1f1f;
   color: #fff;
   padding: 60px 102px 60px 80px;
 }
-
+/* Sets a flexbox on the footer columns element. */
 .footer__columns {
   display: flex;
 }
-
+/* Sets the left margin of the footer__column_content_hour div. element. */
 .footer__column_content_hours {
   margin-left: auto;
 }
-
+/* Sets the left margin 100px of the footer__column_content_hour div. element. */
 .footer__column_content_social {
   margin-left: 100px;
 }
-
+/* Sets the dimension for the footer logo, on the top left of the footer. */
 .footer__logo {
   height: 80px;
   width: 57px;
 }
-
+/* Removes the default browser styles for lists */
 .footer__list {
-  /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
+/* Sets the footer list items bottom margin to 16px. */
 .footer__list-item {
   margin-bottom: 16px;
 }
-
+/* Sets the bottom margin to 0 of the last footer list item. */
 .footer__list-item:last-of-type {
   margin-bottom: 0;
 }
-
+/* Sets the bottom margin of the footer column heading. */
 .footer__column-heading {
   margin: 0 0 20px;
 }
-
+/* Creates a flex-box for the column link and sets the default color, font-size, and line-height. */
 .footer__column-link {
   color: white;
   font-size: 16px;
@@ -461,17 +466,17 @@
   display: flex;
   align-items: center;
 }
-
+/* Changes the default color of the column links in the footer. */
 .footer__column-link:hover {
   color: #c1c1c1;
 }
-
+/* Sets the dimension and position of the footer icons. */
 .footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
 }
-
+/* Sets the top margin of the copyright on the footer. */
 .footer__copyright {
   margin: 108px 0 0;
 }

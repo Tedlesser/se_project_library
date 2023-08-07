@@ -10,8 +10,9 @@
   </head>
 
   <body>
-    <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
+    <!-- Wrap the entire page content in a new div with the page class. -->
     <div class="page">
+      <!--Starts of the header section.-->
       <header class="header">
         <nav class="nav">
           <img
@@ -19,7 +20,7 @@
             alt="Triple Peaks Library Logo"
             class="nav__logo"
           />
-          <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
+          <!-- Putting navigation links in a list, and linking them to each section or page base on id.-->
           <ul class="nav__links">
             <li>
               <a class="nav__link" href="#events">Events</a>
@@ -38,18 +39,20 @@
             </li>
           </ul>
         </nav>
+        <!-- Header title and paragraph for the first page. -->
         <h1 class="header__title">Welcome to the Triple Peaks Library</h1>
         <p class="header__description">
           We're pleased to open our library doors to everyone! Come and expand
           your development knowledge, or just use this lovely spot to work or
           study. This is a cool place for cool students!
         </p>
+        <!-- Linking Illustration on the first page, and assigning class header__image. -->
         <img
           src="./images/inside_the_library.png"
           alt="Illustration 'Inside the library'"
           class="header__image"
         />
-
+        <!--About the library link on the bottom left of the first page, and address on bottom right.-->
         <div class="header__footer">
           <a class="header__link" href="#about">About the library &darr;</a>
           <p class="header__address">
@@ -57,8 +60,9 @@
           </p>
         </div>
       </header>
-
+      <!--Starts of the main section where the event section or page, staff picks section or page, become-a-member section or page, and about section or page is found.-->
       <main class="content">
+        <!-- Events page with title, calendar date and location.-->
         <section class="events" id="events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
@@ -90,13 +94,14 @@
             </p>
             <a class="events__more">More events &rarr;</a>
           </div>
-          <!-- Start creating the composition here -->
+          <!-- Linking Illustration on the second page, and assigning class events__image. Putting a div class events__cover on it.-->
           <div class="events__cover">
             <img
               src="./images/cafe.png"
               alt="A view inside the Library"
               class="events__image"
             />
+            <!-- Putting a div for each person, providing a caption, linking a picture of each person, and assigning a class based on image size.-->
             <div class="person person_name_feynman">
               <p class="person__caption">Joan Feynman</p>
               <img
@@ -139,10 +144,11 @@
             </div>
           </div>
         </section>
-
+        <!--Starts of staff-picks section or page.-->
         <section class="staff" id="staff-picks">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
+          <!-- Created a unorder list with each list-item containing a card. Each div contains a heading, paragraph, and footing of the card.-->
           <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
@@ -213,9 +219,10 @@
             </li>
           </ul>
         </section>
-
+        <!--Starts of the become-a-member section or page.-->
         <section class="membership" id="become-a-member">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
+          <!--Creates an unorder list, with each list-item containing a heading and image, and paragrpah. -->
           <ul class="membership__steps">
             <li class="step">
               <h3 class="step__title">
@@ -269,9 +276,10 @@
             </li>
           </ul>
         </section>
-
+        <!--Starts of the about section or page.-->
         <section class="about" id="about">
           <h2 class="about__title">About the library</h2>
+          <!--Contains three paragraph elements wrap by a div element.-->
           <div class="about__content">
             <p class="about__paragraph">
               Libraries are essential establishments in practically every city,
@@ -294,7 +302,9 @@
           <div class="about__circle"></div>
         </section>
       </main>
+      <!-- Starts of the footer section. -->
       <footer class="footer" id="contacts">
+        <!--Div element called footer columns that wraps the footer with 3 footer column div elements.-->
         <div class="footer__columns">
           <div class="footer__column">
             <img
